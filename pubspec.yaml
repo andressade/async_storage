@@ -1,0 +1,22 @@
+name: async_storage
+description: A new flutter plugin project.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: 0.12.2+1
+
+
+# The following section is specific to Flutter.
+flutter:
+  plugin:
+    androidPackage: ee.datanor.asyncstorage
+    pluginClass: AsyncStoragePlugin
+
+
