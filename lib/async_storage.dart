@@ -25,7 +25,10 @@ class AsyncStorage {
   Future<dynamic> get(String key) async {
     if (Platform.isIOS) {
       var value = await _channel.invokeMethod('multiGet', [key]);
-      return value;
+      if( null != value ){
+        return value[key];
+      }
+      return null;
     } else {
       Database _database;
       try {
